@@ -1,0 +1,452 @@
+a {
+    text-decoration: none ;
+}
+
+#navbar {
+    position: fixed;
+    padding: 20px 40px;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition-duration: 0.5s;
+}
+
+#logo a {
+    color: white;
+}
+
+#toggler {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 240px;
+    right: -240px;
+    top: 0;
+    bottom: 0;
+    line-height: 2.5em;
+    padding-top: 30px;
+    transition-duration: 0.4s;
+}
+
+#nav a {
+    color: white;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+#nav a:hover {
+    color: #bdf;
+}
+
+#top-carousel .carousel-item {
+    height: 100vh;
+    min-height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#top-carousel .carousel-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 100px;
+}
+
+.carousel-indicators button {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+}
+
+#top-carousel .carousel-content {
+    color: white;
+    max-width: 900px;
+    margin: 10% auto;
+    padding: 0 70px;
+}
+
+#top-carousel .carousel-title {
+    margin-left: 50px;
+    font-size: 26px;
+}
+
+#top-carousel .carousel-text {
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+#top-carousel .carousel-btn {
+    border-radius: 40px;
+    padding: 10px 40px;
+}
+
+#about {
+    background: url("../images/about/world.jpg") center/ cover no-repeat fixed;
+    padding: 60px 0;
+    position: relative;
+}
+
+.section-header h3 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.section-header p {
+    text-align: center;
+    padding-bottom: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#about::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#about .container {
+    position: relative;
+}
+
+#about .card-text {
+    color: #444;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#services {
+    padding: 60px 0;
+}
+
+#services h4 {
+    margin-right: 55px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#services .description {
+    margin: 0 55px 40px 20px;
+    color: #555;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.float-right {
+    float: right !important;
+}
+
+#stats {
+    background: url('../images/other/stats.jpg') center / cover no-repeat fixed;
+    padding: 60px 0 10px 0;
+    color: white;
+}
+
+#stats span {
+    font-size: 56px;
+    font-weight: 600;
+    color: greenyellow;
+    font-family: yekanf;
+}
+
+#stats h5 {
+    font-size: 20px;
+    font-family: yekan;
+    margin-bottom: 60px;
+}
+
+#skills {
+    padding: 50px 0;
+}
+
+#skills .progress {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+#skills .progress-bar {
+    transition-duration: 1.5s;
+    width: 0;
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+#portfolio {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+#portfolio-filter {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#portfolio-filter li {
+    flex-basis: 90px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+#portfolio-filter li:hover, #portfolio-filter .filter-active {
+    background-color: #2c6;
+    color: white;
+}
+
+#portfolio .card-img-overlay {
+    padding: 0 30%;
+    background-clip: content-box;
+    transition-duration: 0.3s;
+}
+
+#portfolio .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 0;
+}
+
+#portfolio .card-img-overlay a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 30% 8px;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    line-height: 2.1em;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+#portfolio .card-img-overlay:hover a{
+    opacity: 1;
+}
+
+#portfolio .card-img-overlay a:hover{
+    background-color: #2c6;
+}
+
+#team {
+    padding: 60px 0;
+}
+
+#team .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    top: -50%;
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+
+#team .card:hover .card-img-overlay {
+    top: 0;
+    opacity: 1;
+}
+
+#team .card {
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#team .card-img-overlay h4 {
+    margin-bottom: 16px;
+}
+
+#team .card-img-overlay p {
+    margin-bottom: 25px;
+}
+
+#team .card-img-overlay a {
+    padding: 0 8px;
+    color: white;
+}
+
+#team .card-img-overlay a:hover {
+    color: lightgreen;
+}
+
+#clinets {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+#clinets img {
+    opacity: 0.5;
+    padding: 15px;
+    transition-duration: 0.4s;
+}
+
+#clinets img:hover {
+    opacity: 1;
+}
+
+#clinets .owl-dot {
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    outline: 0;
+    background-color: #ddd;
+}
+
+#clinets .owl-dots {
+    text-align: center;
+}
+
+#clinets .owl-dot.active {
+    background-color: #18d26e;
+}
+
+#footer {
+    background-color: #222;
+    padding-top: 60px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#footer h5 {
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 2px #555 solid;
+    margin-bottom: 20px;
+}
+
+#footer .col-lg-3 {
+    margin-bottom: 40px;
+}
+
+#footer li {
+    padding: 6px 0;
+    border-bottom: 1px solid #333;
+}
+
+#footer li:first-child {
+    padding-top: 0;
+}
+
+#footer li a {
+    color: #ddd;
+    transition-duration: 0.3s;
+}
+
+#footer li a:hover {
+    color: #2c6;
+}
+
+#footer li i {
+    color: #ddd;
+    padding-left: 8px;
+}
+
+#footer .links {
+    margin-top: 6px;
+}
+
+#footer .links a {
+    font-size: 18px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #444;
+    color: #eee;
+    line-height: 2.1em;
+    margin-left: 4px;
+    border-radius: 50%;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+#footer .links a:hover {
+    background-color: #18d26e;
+    color: #fff;
+}
+
+#footer input {
+    float: right;
+    border: 0;
+    padding: 4px;
+    width: 70%;
+}
+
+#footer button {
+    float: right;
+    background-color: #2c6;
+    border: 0;
+    width: 30%;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#footer button:hover {
+    background-color: #195;
+}
+
+
+
+@media (min-width: 768px) {
+    #top-carousel .carousel-title {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 992px) {
+    #toggler {
+        display: none;
+    }
+
+    #nav {
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    #nav li {
+        float: right;
+    }
+
+    #navbar {
+        display: flex;
+    }
+
+    #logo {
+        order: 1;
+        margin-right: auto;
+    }
+
+    #logo h4 {
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+}
